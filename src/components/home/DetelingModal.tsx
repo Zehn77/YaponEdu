@@ -1,5 +1,4 @@
 import { Dispatch, SetStateAction } from "react";
-import { deleteGroup } from "../../services/networkServices/networkService";
 
 export interface Group {
   id: number;
