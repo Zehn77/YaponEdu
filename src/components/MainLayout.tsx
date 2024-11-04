@@ -18,7 +18,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <div style={{ display: "flex", minHeight: "100vh" }} className="">
       <Sitebar collapsed={collapsed} />
-      <div style={{ flex: 1 }} className="bg-gray-100">
+      <div style={{ flex: 1 }} className="bg-gray-100 relative">
         <nav className="flex justify-between px-5 py-3 sticky top-0 bg-gray-200 z-10">
           <button className="" onClick={() => setCollapsed(!collapsed)}>
             <IoMenu className="w-6 h-6" />
