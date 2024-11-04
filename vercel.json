@@ -1,3 +1,9 @@
 {
-  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }],
+  "rewrites": [
+    {
+      "source": "/japan/edu/api/(.*)",
+      "destination": "http://52.53.242.81:7088/japan/edu/api/$1"
+    }
+  ]
 }
